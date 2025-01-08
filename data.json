@@ -1,0 +1,54 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "UIUX Designer",
+      "lastModified": "2025-01-07T10:00:00Z",
+      "candidates": [
+        {
+          "id": 1,
+          "name": "Jill James",
+          "messages": [
+            {
+              "type": "message",
+              "content": [
+                {
+                  "from": "user",
+                  "text": "Hi, can you briefly tell me about your experience?"
+                },
+                {
+                  "from": "candidate",
+                  "text": "Of course! I’ve been a UI/UX designer for 2 years, primarily working in the Salesforce domain. I focus on user-centric designs and hold a Salesforce Administrator certification."
+                },
+                {
+                  "from": "user",
+                  "text": "Great! How do you handle client requirements in your projects?"
+                },
+                {
+                  "from": "candidate",
+                  "text": "I use design thinking to balance client needs with user experience. For example, in a recent Salesforce Health Cloud project, I streamlined complex client requests into simple, intuitive interfaces."
+                },
+                {
+                  "from": "user",
+                  "text": "Excellent. Lastly, how do you stay updated with the latest design trends and tools?"
+                },
+                {
+                  "from": "candidate",
+                  "text": "I regularly explore design blogs, attend webinars, and take courses to stay current. Plus, I enjoy experimenting with new tools like Figma and Axure to keep improving my skills."
+                }
+              ]
+            },
+            {
+              "type": "email",
+              "content": "No email data available yet."
+            },
+            {
+              "type": "text",
+              "content": "No text data available yet."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
