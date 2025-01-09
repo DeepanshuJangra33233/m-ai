@@ -10,20 +10,23 @@ const CandidateList = ({ candidates, onSelect }) => {
 
   return (
     <div className="border p-4">
-      <h2 className="text-lg font-bold">Candidates</h2>
-      <ul>
-        {candidates.map((candidate) => (
-          <li
-            key={candidate.id}
-            className={`p-2 cursor-pointer ${
-              selectedCandidate.id === candidate.id ? "bg-gray-200" : ""
-            }`}
-            onClick={() => handleSelect(candidate)}
-          >
-            {candidate.name}
-          </li>
-        ))}
-      </ul>
+      <div className="collapse collapse-arrow">
+        <input type="radio" name="my-accordion-2" />
+        <div className="collapse-title text-xl font-medium">Candidates</div>
+        <div className="collapse-content flex items-center flex-wrap gap-3">
+          {candidates.map((candidate) => (
+            <div
+              key={candidate.id}
+              className={`mt-3 border border-[#EBEBEB] rounded-[5px] p-5 cursor-pointer list-none w-[48%] ${
+                selectedCandidate.id === candidate.id ? "bg-[#E5F0FA]" : ""
+              }`}
+              onClick={() => handleSelect(candidate)}
+            >
+              {candidate.name}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

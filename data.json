@@ -19,32 +19,245 @@
                 {
                   "from": "candidate",
                   "text": "Of course! I’ve been a UI/UX designer for 2 years, primarily working in the Salesforce domain. I focus on user-centric designs and hold a Salesforce Administrator certification."
-                },
-                {
-                  "from": "user",
-                  "text": "Great! How do you handle client requirements in your projects?"
-                },
-                {
-                  "from": "candidate",
-                  "text": "I use design thinking to balance client needs with user experience. For example, in a recent Salesforce Health Cloud project, I streamlined complex client requests into simple, intuitive interfaces."
-                },
-                {
-                  "from": "user",
-                  "text": "Excellent. Lastly, how do you stay updated with the latest design trends and tools?"
-                },
-                {
-                  "from": "candidate",
-                  "text": "I regularly explore design blogs, attend webinars, and take courses to stay current. Plus, I enjoy experimenting with new tools like Figma and Axure to keep improving my skills."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Daniel Green",
+          "messages": [
             {
-              "type": "email",
-              "content": "No email data available yet."
-            },
+              "type": "message",
+              "content": [
+                {
+                  "from": "user",
+                  "text": "Can you share your experience in UI/UX design?"
+                },
+                {
+                  "from": "candidate",
+                  "text": "I have 3 years of experience in UI/UX design, specializing in e-commerce platforms. I excel in creating user-friendly interfaces and conducting usability testing."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Frontend Developer",
+      "lastModified": "2025-01-08T12:30:00Z",
+      "candidates": [
+        {
+          "id": 3,
+          "name": "Mark Spencer",
+          "messages": [
             {
-              "type": "text",
-              "content": "No text data available yet."
+              "type": "message",
+              "content": [
+                {
+                  "from": "user",
+                  "text": "Can you describe your front-end development experience?"
+                },
+                {
+                  "from": "candidate",
+                  "text": "Sure! I have 3 years of experience in front-end development, focusing on React.js and Vue.js projects."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Sara Lee",
+          "messages": [
+            {
+              "type": "message",
+              "content": [
+                {
+                  "from": "user",
+                  "text": "What’s your approach to debugging front-end issues?"
+                },
+                {
+                  "from": "candidate",
+                  "text": "I use browser developer tools extensively and prefer a structured approach like isolating the issue step-by-step. I also write unit tests to catch errors early."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Michael Adams",
+          "messages": [
+            {
+              "type": "message",
+              "content": [
+                {
+                  "from": "user",
+                  "text": "What tools do you use for CSS styling?"
+                },
+                {
+                  "from": "candidate",
+                  "text": "I primarily use Tailwind CSS and SCSS for styling. I also have experience with styled-components in React for modular CSS."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Backend Engineer",
+      "lastModified": "2025-01-07T15:45:00Z",
+      "candidates": [
+        {
+          "id": 6,
+          "name": "Alice Carter",
+          "messages": [
+            {
+              "type": "message",
+              "content": [
+                {
+                  "from": "user",
+                  "text": "What’s your expertise in backend development?"
+                },
+                {
+                  "from": "candidate",
+                  "text": "I have 4 years of experience in backend development, primarily with Node.js and Python."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "John Bennett",
+          "messages": [
+            {
+              "type": "message",
+              "content": [
+                {
+                  "from": "user",
+                  "text": "Can you share a challenging backend project you've worked on?"
+                },
+                {
+                  "from": "candidate",
+                  "text": "I recently worked on a fintech project where I had to optimize a microservices-based architecture to handle a 300% increase in user traffic."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Emma Wilson",
+          "messages": [
+            {
+              "type": "message",
+              "content": [
+                {
+                  "from": "user",
+                  "text": "What is your experience with database management?"
+                },
+                {
+                  "from": "candidate",
+                  "text": "I specialize in both relational (PostgreSQL) and NoSQL (MongoDB) databases. I’ve designed scalable schemas for high-traffic applications."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Data Scientist",
+      "lastModified": "2025-01-06T09:00:00Z",
+      "candidates": [
+        {
+          "id": 9,
+          "name": "Tom Hardy",
+          "messages": [
+            {
+              "type": "message",
+              "content": [
+                {
+                  "from": "user",
+                  "text": "Can you provide an overview of your experience in data science?"
+                },
+                {
+                  "from": "candidate",
+                  "text": "I have 5 years of experience in data science, working on predictive analytics and machine learning models."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Sophia Taylor",
+          "messages": [
+            {
+              "type": "message",
+              "content": [
+                {
+                  "from": "user",
+                  "text": "How do you ensure the accuracy of your models?"
+                },
+                {
+                  "from": "candidate",
+                  "text": "I use cross-validation techniques and hyperparameter tuning to optimize model performance."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Cloud Engineer",
+      "lastModified": "2025-01-05T14:15:00Z",
+      "candidates": [
+        {
+          "id": 11,
+          "name": "Emma Watson",
+          "messages": [
+            {
+              "type": "message",
+              "content": [
+                {
+                  "from": "user",
+                  "text": "Tell me about your experience with cloud platforms."
+                },
+                {
+                  "from": "candidate",
+                  "text": "I have 3 years of experience in cloud engineering, primarily with AWS and Azure."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Liam Johnson",
+          "messages": [
+            {
+              "type": "message",
+              "content": [
+                {
+                  "from": "user",
+                  "text": "What’s your expertise in infrastructure automation?"
+                },
+                {
+                  "from": "candidate",
+                  "text": "I use Terraform and Ansible for automating infrastructure setup and management, ensuring efficiency and consistency."
+                }
+              ]
             }
           ]
         }

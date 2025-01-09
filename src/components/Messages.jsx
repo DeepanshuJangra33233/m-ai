@@ -7,7 +7,7 @@ const Messages = ({ messages }) => {
 
   return (
     <div className="border p-4 flex-1">
-      <div className="tabs">
+      <div className="tabs flex items-center">
         {["message", "email", "text"].map((tab) => (
           <button
             key={tab}
