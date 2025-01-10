@@ -22,7 +22,7 @@ const Header = () => {
           <li className="font-semibold cursor-pointer text-[#616161] text-[22px] hover:text-black duration-300">
             Reports
           </li>
-          <li className="font-semibold cursor-pointer text-[#616161] text-[22px] hover:text-black duration-300">
+          <li className="font-semibold cursor-pointer relative after:absolute after:contents-[''] after:h-[2px] after:bg-black after:w-full after:bottom-0 after:left-0 text-[22px] text-black duration-300">
             Messages
           </li>
         </ul>
@@ -82,7 +82,7 @@ const Header = () => {
           </li>
           <li
             onClick={() => setIsOpen(false)}
-            className="font-semibold cursor-pointer text-[#616161] text-[22px] hover:text-black duration-300"
+            className="font-semibold cursor-pointer text-[22px] text-black duration-300"
           >
             Messages
           </li>
