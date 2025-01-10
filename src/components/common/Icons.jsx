@@ -1,3 +1,63 @@
+export const Camera = () => {
+  return (
+    <svg
+      width="26"
+      height="26"
+      viewBox="0 0 26 26"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <rect width="26" height="26" fill="url(#pattern0_1455_9194)" />
+      <defs>
+        <pattern
+          id="pattern0_1455_9194"
+          patternContentUnits="objectBoundingBox"
+          width="1"
+          height="1"
+        >
+          <use xlink:href="#image0_1455_9194" transform="scale(0.01)" />
+        </pattern>
+        <image
+          id="image0_1455_9194"
+          width="100"
+          height="100"
+          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACaUlEQVR4nO2cv2rWYBSHn2KddKmDrmrdKqJ4E96DVbwHB7ur0KlYqKugFARdVbwAxUFc1Evwz6RzC+orgXQQPjFfkjfn+PV54Kzhy+9JcpJ8bw6IiIiIiIiIiIiIiIiIiIjIGJwA1oDLC1gXgFPAEsk5C9wHPgPlENR3YLeVlI5bwH6CkEpA/WoPxKMk4V6CUEqCegEsR8u4kSCIkqg2I2UcA74mCKEkqv22l4ZwLUEAJWHdiRKym2DnS8J6FyXkdYKdL0lvh0P4mGDnS9LqyyXgIfAWeAlcn+cBVCGMJqQJfQP4MWNbj7tKUQijCDkOPP3HGdfcQCmE+pesc8CHDtt7rhCq95Ar7Q1Al+29VwjVhCy17/5m9Yu/VdMevGQxvpAu/UIhTCOka79QCPWFzNMvFEI9IX36hUKoI6Rvv1AI4wsZ0i8UwvhChvQLhZC/fA4hXoJCiA9eIcSHrRDiA1YI8aEqhPggFUJ8eAohPjCFEB+SQhIEUxQSH0ZJUL46IV6CQogPXiHEh60Q4gNWCNMG6B9U5KrVdrWhZwi5Fjk88ZJFGiEuAyKfEBfKkVMIA/uKT+qML2RIX1EIdYT07SsKoZ6QPn3FD3aoL4Q5lpw+67IxP/pksJCui7LXFcIkZ0iXz6KbiRl+Fs20Qg44DzwA3rTjntbnGRzwauCPXtT6RhAOnyHX8JmrCY7GkrBuRw4w+5IggJKo9oAzBOIQM/4QcpcEbCU4MkuCah7ejpCEm+3pWg5h/QS2M42JPeA0sAN8ShBSmej29hFwkf+AlQUfNX4yOmARERERERERERERERERERFhJr8Bz9t7miE+/i8AAAAASUVORK5CYII="
+        />
+      </defs>
+    </svg>
+  );
+};
+export const Phone = () => {
+  return (
+    <svg
+      width="26"
+      height="26"
+      viewBox="0 0 26 26"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <rect width="26" height="26" fill="url(#pattern0_1455_9193)" />
+      <defs>
+        <pattern
+          id="pattern0_1455_9193"
+          patternContentUnits="objectBoundingBox"
+          width="1"
+          height="1"
+        >
+          <use xlink:href="#image0_1455_9193" transform="scale(0.0111111)" />
+        </pattern>
+        <image
+          id="image0_1455_9193"
+          width="90"
+          height="90"
+          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADnklEQVR4nO2cW4hNURiAPwy55hYZ8eCalIyXSW6l5BJJKTE1pEhuefDkRZQXyYQ8SblGLnkgohRFhgfk8qBchyZymeQ+LrO0ml+DmWPW2Wtve591/q/+x7PPWt/ZZ629//WvBYqiKIqiKIqiKEVEe6ASOAu8At4AB4EBaTcsJKYCDwHTQjwB+qbdwEKnLVAFNOSQbCQOp93QQqYDcLwVwUbC/hAT025wIdIOOOIo2UjcAUrSbnihsTlPyUZiedoNLyRmOozJueI10CvtDhQCnYFHESUbiZ1pd6IQWOcp2QDfgVFpdyTrTxm1MYg2wIW0O5NlpsUk2UjMS7tDWWVbzKJrZMxX/uJSzKINsFEtN+d5AqI/A4NU9p98SUC0kdd45Tc+JSTayESrCK8TFH1X8yBNXEtQtAGW6C3dyIGERZ9X0Y2sTFj0DRXdyPCERe9S0U34Zu5MjvgGjFTRTWxISHSVSv6TgZLmjFPyC6C7im7O6ZhFV6rklhkXo+TLQBsVnZtzMUj+DpSp5H8zNgbRu1WyG4c8RY9X0W6UAm89RA9S0e6s9hA9W0XnVxoWNat3RT6vODIEeBdR9ma1nB9LPYaQxSo7P456LNCWq2x3egOPI8p+Jk8xiiOjgY8RZd8Geqppdyo8xutqoIvKdmerh+xTuiLuTolsgzMRY59m9dzpJguuUWXvUNnulHo8iRgpcbAbRRUHhgIvPcdsLe91ZIJn7Z4tGe6ht7UbM4B6D9m3gP4RZds9M3ukxu+CpAyC3vM4B/jqIbs2z9d1+y/YLnUjf1/rnvz4wTI3R8ddw9ZpL2rlO+yC70IpZXCZAwYTKIuAHx6yjdypLeWzx8jqej7XqpfrdSVAlsUgu1qGo2HAZGCvZ4FPTai7xSo8h5Gk4qIkyIJinucEmVTYf9t+oA8BMUsWAEwGow5YE9L65vSENyT5xk1gEgG9Qb7JgNRc0SDHFgVxRtQIz0TU/4iaUE4/KwWuZ0Boa5nFYPLZZzMgNFfYs/2CocRzWSzJsBtcg2M+8CEDcn8Pu/MhSMoyNkkuIPAinRMZkHw/9Hz2L2wK9H2Kz9L2LNaiYRhwNQXRWyhC2gGrPHce5BPH5ODboqWfZNqinjDpEnZu6Jh2R7NCOXAmgTF5U7Hfyf/anncyhu3U9vBxPYbIAZv4WQ88yFPwU2At0MnlS5TmFVMrZCyvlhXyOomnUu9hX/enaBmaoiiKoiiKoiiKoigKLfITfKfz4+dwKvgAAAAASUVORK5CYII="
+        />
+      </defs>
+    </svg>
+  );
+};
 export const Notification = () => {
   return (
     <svg
