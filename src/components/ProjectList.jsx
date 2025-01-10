@@ -9,7 +9,7 @@ const ProjectList = ({ projects, onSelect }) => {
   };
 
   return (
-    <div className="border p-4">
+    <div className="border p-4 bg-white">
       <div className="collapse collapse-arrow">
         <input type="radio" name="my-accordion-2" />
         <div className="collapse-title text-xl font-medium">Project Name</div>

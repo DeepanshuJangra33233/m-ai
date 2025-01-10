@@ -1,50 +1,54 @@
-import React, { useState } from "react";
-import Header from "./Header";
-import ProjectList from "./ProjectList";
-import Messages from "./Messages";
-import CandidateList from "./CandidateList";
+import { useState } from "react";
+import Header from "../components/Header";
+import ProjectList from "../components/ProjectList";
+import CandidateList from "../components/CandidateList";
+import Messages from "../components/Messages";
 import data from "../../data.json";
-import { RightArrow } from "./common/Icons";
 
-const Dashboard = () => {
-  const [selectedProject, setSelectedProject] = useState(data.projects[0]);
-  const [selectedCandidate, setSelectedCandidate] = useState(
-    data.projects[0].candidates[0]
-  );
-  const [showSideBar, setShowSideBar] = useState(false);
+const HomePage = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedCandidate, setSelectedCandidate] = useState(null);
+
   return (
-    <div>
-      <div className="h-screen flex flex-col">
-        <Header />
-        <div>
-          <span
-            className="cursor-pointer w-[50px] shadow-lg inline-block rounded-2xl"
-            onClick={() => setShowSideBar(true)}
-          >
-            <RightArrow />
-          </span>
-        </div>
-        <div className="flex flex-grow">
-          <div className="max-w-[475px] w-full">
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <div className="flex flex-grow px-3 justify-between mt-3">
+        {/* Project List */}
+        <div className="w-full max-w-[476px]">
+          <div className="w-full">
             <ProjectList
               projects={data.projects}
               onSelect={(project) => {
                 setSelectedProject(project);
-                setSelectedCandidate(project.candidates[0]);
+                setSelectedCandidate(null); // Reset candidate when the project changes
               }}
             />
+          </div>
+
+          {/* Candidate List */}
+          <div className="w-full">
             <CandidateList
-              candidates={selectedProject.candidates}
+              candidates={selectedProject ? selectedProject.candidates : []}
               onSelect={setSelectedCandidate}
             />
           </div>
-          <div className="max-w-[931px] w-full">
-            <Messages messages={selectedCandidate.messages} />
-          </div>
+        </div>
+        {/* Message Panel */}
+        <div className="w-full max-w-[931px]">
+          {selectedProject && selectedCandidate ? (
+            <Messages
+              candidate={selectedCandidate}
+              messages={selectedCandidate.messages}
+            />
+          ) : (
+            <div className="h-full flex items-center justify-center text-gray-500">
+              {/* Empty message panel until both project and candidate are selected */}
+            </div>
+          )}
         </div>
       </div>
     </div>
   );
 };
 
-export default Dashboard;
+export default HomePage;
